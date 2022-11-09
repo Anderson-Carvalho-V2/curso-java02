@@ -1,0 +1,56 @@
+package application;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+import entities.Client;
+import entities.Order;
+import entities.OrderItem;
+import entities.Product;
+import enums.OrderStatus;
+
+public class Progam {
+
+	public static void main(String[] args) throws ParseException {
+		
+		Scanner sc = new Scanner(System.in);
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YYYY");
+		
+		System.out.println("Digite os dados do Cliente: ");
+		System.out.print("Nome: ");
+		String nome = sc.nextLine();
+		
+		System.out.print("Email: ");
+		String email = sc.next();
+		System.out.print("Data de Nascimento (DD/MM/YYYY): ");
+		Date dataNascimento = sdf.parse(sc.next());
+		Client client = new Client(nome, email, dataNascimento);
+		
+		System.out.println("\nDigite os dados do Pedido: ");
+		System.out.print("Nome: ");
+		OrderStatus status = OrderStatus.valueOf(sc.next().toUpperCase());
+		System.out.print("Quanto items para esse pedido? ");
+		int nItem = sc.nextInt();
+	
+		Order order = new Order(sdf.parse("07/11/2022"), status, client);
+		
+		for(int i=1; i<=nItem; i++) {
+			System.out.println("Digite os dados do pedido #" + i + ":");
+			System.out.print("Nome do produto: ");
+			String nameProduto = sc.next();
+			System.out.print("Preço do produto: ");
+			double precoProduto = sc.nextDouble();
+			System.out.print("quantidade: ");
+			int qtdProduto = sc.nextInt();
+			Product produto = new Product(nameProduto, precoProduto);
+			OrderItem itensPedido = new OrderItem(qtdProduto, precoProduto);
+			itensPedido.addProduct(produto);
+		}
+		
+		System.out.println("Resumo do pedido:");
+		
+		sc.close();
+	}
+}

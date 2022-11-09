@@ -1,0 +1,23 @@
+package entities;
+
+public class PessoaJuridica extends Pessoa{
+
+	private Integer nFunconairos;
+
+	public PessoaJuridica(String nome, Double rendaAnual, Integer nFunconairos) {
+		super(nome, rendaAnual);
+		this.nFunconairos = nFunconairos;
+	}
+
+	public Integer getnFunconairos() {
+		return nFunconairos;
+	}
+
+	public void setnFunconairos(Integer nFunconairos) {
+		this.nFunconairos = nFunconairos;
+	}
+
+	
+	
+	
+}

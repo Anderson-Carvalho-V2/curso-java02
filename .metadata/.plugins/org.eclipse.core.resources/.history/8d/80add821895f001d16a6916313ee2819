@@ -1,0 +1,23 @@
+package application;
+
+import entities.Account;
+import entities.SavingsAccount;
+
+public class Progam {
+
+	public static void main(String[] args) {
+	
+		Account x = new Account(1001, "Alex", 1000.00);
+		Account y = new SavingsAccount(1002, "Maria", 1000.00, 0.01);
+		
+		x.saque(50.0);
+		y.saque(50.0);
+	}
+}
+
+
+
+
+
+
+

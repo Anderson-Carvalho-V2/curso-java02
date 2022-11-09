@@ -1,0 +1,48 @@
+package application;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+
+import entities.Funcionario;
+import enums.NivelCargo;
+
+public class Progam {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		String dataString = sc.next();
+		LocalDate data = LocalDate.parse(dataString);
+		System.out.print(fmt1.format(data));
+		
+		System.out.print("Digite o nome do departamento: ");
+		String departamento = sc.next();
+			
+		System.out.println("Digite os dados do funcionário:");
+		System.out.print("Nome: ");
+		String nome = sc.next();
+		System.out.print("Nivel: ");
+		String nivel = sc.next().toUpperCase();
+		NivelCargo eNivel = NivelCargo.valueOf(nivel);
+		System.out.print("Salário base: ");
+		Double salario = sc.nextDouble();
+		
+		Funcionario funcionario1 = new Funcionario(nome, eNivel, salario);
+	
+		System.out.println("Digite o número de contratos do funcionário: ");
+		int qtdContrato = sc.nextInt();
+		
+		for(int i=1; i<=qtdContrato;i++) {
+			System.out.print("Digite os dados do contrato #" + i + ":");
+			System.out.print("Data: ");
+			//String dataString = sc.next();
+			//Date data = Date.valueOf(dataString);
+		
+		}
+	
+	
+	
+	}
+}

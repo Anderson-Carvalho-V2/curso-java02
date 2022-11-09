@@ -1,0 +1,36 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Funcionario;
+import entities.FuncionarioTerceirizado;
+
+public class Progam {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o número de empregados: ");
+		int n = sc.nextInt();
+		
+		for(int i=1; i<=n; i++) {
+			System.out.print("Dados do funcionário #" + i +":");
+			System.out.print("\nTerceirado (y/n)? ");
+			char terceirizado = sc.next().charAt(0);
+			System.out.print("\nNome: ");
+			String nome = sc.next();
+			System.out.print("\nHoras: ");
+			int horas = sc.nextInt();
+			System.out.print("\nValor por hora: ");
+			double valorHora = sc.nextDouble();
+		
+		}
+		
+		
+		
+		
+		
+		sc.close();
+	}
+}

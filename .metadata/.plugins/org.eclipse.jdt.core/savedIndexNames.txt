@@ -1,0 +1,15 @@
+INDEX VERSION 1.131+C:\Projetos\ProjetosEclipse\Curso Java - Intemediario\.metadata\.plugins\org.eclipse.jdt.core
+2981964183.index
+3143944782.index
+4123552910.index
+4090240741.index
+3851791883.index
+2462033188.index
+1865797976.index
+2227908211.index
+1843197743.index
+3941232991.index
+2867529895.index
+1791315807.index
+1944264933.index
+3854194234.index

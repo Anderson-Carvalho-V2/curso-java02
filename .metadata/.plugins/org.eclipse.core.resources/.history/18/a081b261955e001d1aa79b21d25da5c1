@@ -1,0 +1,21 @@
+package entities;
+
+public class Departametno {
+
+	public String name;
+	
+	public Departametno() {}
+
+	public Departametno(String name) {
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+}

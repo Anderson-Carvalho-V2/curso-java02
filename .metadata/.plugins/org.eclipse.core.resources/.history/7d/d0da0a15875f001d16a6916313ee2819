@@ -1,0 +1,9 @@
+package entities;
+
+public class SavingsAccountPlus extends SavingsAccount{
+	
+	@Override
+	public void saque(double valor) {
+		balance -= valor + 2.0;
+	}
+}

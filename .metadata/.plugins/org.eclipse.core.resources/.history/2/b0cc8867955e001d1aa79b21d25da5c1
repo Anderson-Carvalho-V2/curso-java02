@@ -1,0 +1,59 @@
+package entities;
+
+import enums.NivelCargo;
+
+public class Funcionario {
+	private String nome;
+	private NivelCargo nivel;
+	private Double salarioBase;
+	
+	public Funcionario() {}
+	
+	public Funcionario(String nome, NivelCargo nivel, Double salarioBase) {
+		this.nome = nome;
+		this.nivel = nivel;
+		this.salarioBase = salarioBase;
+	}
+
+	
+	public void addContrato() {
+		
+	}
+	
+	public void removeContrato() {
+		
+	}
+	
+	public Double salarioFinal() {
+		return null;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public NivelCargo getNivel() {
+		return nivel;
+	}
+
+	public void setNivel(NivelCargo nivel) {
+		this.nivel = nivel;
+	}
+
+	public Double getSalarioBase() {
+		return salarioBase;
+	}
+
+	public void setSalarioBase(Double salarioBase) {
+		this.salarioBase = salarioBase;
+	}
+	
+	
+	
+	
+	
+}

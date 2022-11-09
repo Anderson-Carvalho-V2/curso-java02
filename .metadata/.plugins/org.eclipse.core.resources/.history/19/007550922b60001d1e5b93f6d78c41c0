@@ -1,0 +1,16 @@
+package application;
+
+import entities.Pessoa;
+import entities.PessoaFisica;
+
+public class Progam {
+	
+	public static void main(String[] args) {
+		
+		Pessoa p1 = new PessoaFisica("anderson", 50000.00, 2000);
+		
+		System.out.println(p1.imposto());
+		
+		
+	}
+}

@@ -1,0 +1,32 @@
+package entities;
+
+public class PessoaFisica extends Pessoa {
+
+	private Integer gastosSaude;
+	
+	public PessoaFisica(String nome, Double rendaAnual, Integer gastosSaude) {
+		super(nome, rendaAnual);
+		this.gastosSaude = gastosSaude;
+	}
+
+	public Integer getGastosSaude() {
+		return gastosSaude;
+	}
+
+	public void setGastosSaude(Integer gastosSaude) {
+		this.gastosSaude = gastosSaude;
+	}
+
+	@Override
+	public double imposto() {
+		double taxa;
+		if(getRendaAnual() < 20000) {
+			taxa = 0.15;
+		}else {
+			taxa = 0.25;
+		}
+
+		double imposto = getRendaAnual() * taxa;
+		return (getRendaAnual() - imposto) - (getGastosSaude() * 0.5);
+	}
+}

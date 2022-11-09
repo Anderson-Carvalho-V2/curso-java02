@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;entities.Postagem.java&apos; to &apos;Post.java&apos;&#x0D;&#x0A;- Original project: &apos;curso_composicao2&apos;&#x0D;&#x0A;- Original element: &apos;entities.Postagem.java&apos;&#x0D;&#x0A;- Renamed element: &apos;entities.Post.java&apos;" description="Rename compilation unit &apos;Postagem.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;entities{Postagem.java" name="Post.java" references="false" stamp="1667829450409" version="1.0"/>
+</session>

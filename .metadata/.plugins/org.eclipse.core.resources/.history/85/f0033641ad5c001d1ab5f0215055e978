@@ -1,0 +1,33 @@
+package application;
+
+import java.util.Scanner;
+
+import entities.Funcionario;
+import enums.NivelCargo;
+
+public class Progam {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Digite o nome do departamento: ");
+		String departamento = sc.next();
+			
+		System.out.println("Digite os dados do funcionário");
+		System.out.print("Nome: ");
+		String nome = sc.next();
+		System.out.print("Nivel: ");
+		String nivel = sc.next().toUpperCase();
+		NivelCargo eNivel = NivelCargo.valueOf(nivel);
+		System.out.print("Salário base: ");
+		Double salario = sc.nextDouble();
+		
+		Funcionario funcionario1 = new Funcionario(nome, eNivel, salario);
+	
+	
+	
+	
+	
+	
+	}
+}

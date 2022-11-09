@@ -1,0 +1,16 @@
+package application;
+
+import entities.Order;
+import entities.enums.OrderStatus;
+import java.util.Date;
+
+public class Progam {
+
+	public static void main(String[] args) {
+		
+		Order order = new Order(1080, new Date(), OrderStatus.AGUARDANDO_PAGAMENTO);
+		
+		System.out.println(order);
+	}
+
+}

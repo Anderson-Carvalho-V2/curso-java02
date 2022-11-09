@@ -1,0 +1,25 @@
+package entities;
+
+public class Individual extends TaxPayer {
+
+	private Double healthSpending;
+	
+	public Individual(String name, Double anualIncome, Double healthSpending) {
+		super(name, anualIncome);
+		this.healthSpending = healthSpending;
+	}
+
+	public Double getHealthSpending() {
+		return healthSpending;
+	}
+
+	public void setHealthSpending(Double healthSpending) {
+		this.healthSpending = healthSpending;
+	}
+
+	@Override
+	public double tax() {
+		
+		return 0;
+	}
+}

@@ -1,0 +1,17 @@
+package application;
+
+import entities.Funcionario;
+import entities.FuncionarioTerceirizado;
+
+public class Progam {
+
+	public static void main(String[] args) {
+		
+		Funcionario func1 = new Funcionario("Alex", 20, 10);
+		FuncionarioTerceirizado func2 = new FuncionarioTerceirizado("Maria", 20, 10.0, 5.0);
+
+		System.err.println(func1.pagamento());
+		System.err.println(func2.pagamento());
+	}
+
+}

@@ -1,0 +1,57 @@
+package application;
+
+import entities.Account;
+import entities.BuinessAccount;
+import entities.SavingsAccount;
+
+public class Progam {
+
+	public static void main(String[] args) {
+		/*
+		Account acc = new Account(1001, "Alex", 0.0);
+		BuinessAccount bacc = new BuinessAccount(1002, "Maria", 0.0, 500.0);
+		
+		//UPCASTING
+	
+		Account acc1 = bacc;
+		
+		Account acc2 = new BuinessAccount(1003, "Bob", 0.0, 200.0);
+		
+		Account acc3 = new SavingsAccount(1004, "Ana", 0.0, 0.01);
+	
+		//DOWNCASTING
+		
+		BuinessAccount acc4 = (BuinessAccount)acc2;
+		acc4.loan(100);
+		
+		//Essa opeção da erro de tipos incopativéis.
+		//BuinessAccount acc5 = (BuinessAccount)acc3;
+		
+		if(acc3 instanceof BuinessAccount) {
+			BuinessAccount acc5 = (BuinessAccount)acc3;
+			acc5.loan(200.0);
+			System.out.println("Loan!");
+		}
+		
+		if(acc3 instanceof SavingsAccount) {
+			SavingsAccount acc5 = (SavingsAccount)acc3;
+			acc5.updateBalance();
+			System.out.println("Update!");
+		}
+		*/
+		Account acc1 = new Account(1001, "Alex", 1000.00);
+		acc1.saque(200.00);
+		System.out.println(acc1.getBalance());
+		
+		Account acc2 = new SavingsAccount(1002, "Maria", 1000.00, 0.1);
+		acc2.saque(200.00);
+		System.out.println(acc2.getBalance());
+	}
+}
+
+
+
+
+
+
+

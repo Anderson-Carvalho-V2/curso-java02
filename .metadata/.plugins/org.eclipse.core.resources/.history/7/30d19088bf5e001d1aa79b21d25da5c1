@@ -1,0 +1,46 @@
+package application;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+import entities.Client;
+import enums.OrderStatus;
+
+public class Progam {
+
+	public static void main(String[] args) throws ParseException {
+		
+		Scanner sc = new Scanner(System.in);
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YYYY");
+		
+		System.out.println("Digite os dados do Cliente: ");
+		System.out.print("Nome: ");
+		String nome = sc.nextLine();
+		
+		System.out.print("Email: ");
+		String email = sc.next();
+		System.out.print("Data de Nascimento (DD/MM/YYYY): ");
+		Date dataNascimento = sdf.parse(sc.next());
+		Client client = new Client(nome, email, dataNascimento);
+		
+		System.out.println("\nDigite os dados do Pedido: ");
+		System.out.print("Nome: ");
+		OrderStatus status = OrderStatus.valueOf(sc.next().toUpperCase());
+		System.out.print("Quanto items para esse pedido? ");
+		int nItem = sc.nextInt();
+	
+		for(int i=1; i<=nItem; i++) {
+			System.out.println("Digite os dados do pedido #" + i + ":");
+			System.out.print("Nome do produto: ");
+			System.out.print("Preço do produto: ");
+			System.out.print("quantidade: ");
+		
+		}
+		
+		
+		
+		sc.close();
+	}
+}

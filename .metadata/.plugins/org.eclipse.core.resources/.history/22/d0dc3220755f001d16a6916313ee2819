@@ -1,0 +1,12 @@
+package application;
+
+import entities.BuinessAccount;
+
+public class Progam {
+
+	public static void main(String[] args) {
+		BuinessAccount account = new BuinessAccount();
+
+	}
+
+}

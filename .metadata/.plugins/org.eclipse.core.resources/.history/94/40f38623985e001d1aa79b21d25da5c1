@@ -1,0 +1,27 @@
+package entities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import enums.NivelCargo;
+
+public class Funcionario {
+	private String nome;
+	private NivelCargo nivel;
+	private Double salarioBase;
+	
+	private Departamento departamento;
+	private List<Contrato> contratos = new ArrayList<>();
+	
+	public Funcionario() {}
+
+	public Funcionario(String nome, NivelCargo nivel, Double salarioBase, Departamento departamento) {
+		this.nome = nome;
+		this.nivel = nivel;
+		this.salarioBase = salarioBase;
+		this.departamento = departamento;
+	}
+	
+	
+	
+}
